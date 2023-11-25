@@ -11,7 +11,7 @@ const path = require("path");
 const app = express();
 
 // Serve static files from the 'public' directory
-app.use("/storage", express.static(path.join(__dirname, "../storage")));
+app.use("/storage", express.static(path.join(__dirname, "./storage")));
 const bodyParserConfig = {
   limit: "1024mb",
   extended: true,
