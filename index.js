@@ -8,7 +8,7 @@ const app = express();
 const wss = new WebSocket.Server({ noServer: true });
 
 // Serve static files from the 'public' directory
-//app.use("/storage", express.static(path.join(__dirname, "./storage")));
+app.use("/storage", express.static(path.join(__dirname, "./storage")));
 
 const bodyParserConfig = {
   limit: "1024mb",
